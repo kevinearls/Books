@@ -9,7 +9,7 @@ import class PhotosUI.PHPickerViewController
 import SwiftUI
 
 struct DetailView: View {
-    var book: Book
+    @ObservedObject var book: Book
     @Binding var image: Image?
     @State var showingImagePicker=false
     @State var showingConfirmationDialog=false
